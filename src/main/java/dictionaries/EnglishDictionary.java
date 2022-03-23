@@ -1,11 +1,12 @@
 package dictionaries;
 
+import interfaces.IDictionaryAPI;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-public class EnglishDictionary {
+public class EnglishDictionary implements IDictionaryAPI {
 
     private static String url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
     private static CloseableHttpResponse response;
